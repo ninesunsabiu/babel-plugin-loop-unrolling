@@ -1,0 +1,32 @@
+{
+  "name": "babel-plugin-loop-unrolling",
+  "version": "0.0.1",
+  "description": "在转译过程中将「指令」标记的map循环进行展开",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "kcd-scripts build",
+    "lint": "kcd-scripts lint",
+    "test": "kcd-scripts test",
+    "test:update": "npm test -- --updateSnapshot --coverage",
+    "typecheck": "kcd-scripts typecheck",
+    "validate": "kcd-scripts validate"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "loop-unrolling"
+  ],
+  "author": "Ezio Lin <ninesuns.lin@outlook.com>",
+  "license": "MIT",
+  "module": "true",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "babel-plugin-tester": "^10.0.0",
+    "kcd-scripts": "^10.0.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.0"
+  }
+}
