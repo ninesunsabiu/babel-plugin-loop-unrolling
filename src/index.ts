@@ -48,7 +48,7 @@ export default function loopUnrolling(babel: Core): babelCore.PluginObj<Config> 
         path: babelCore.NodePath
     ): asserts processFn is babelCore.types.Identifier {
         if (!t.isIdentifier(processFn)) {
-            throw path.buildCodeFrameError('loop-unrolling only support an function pointer');
+            throw path.buildCodeFrameError('loop-unrolling only support function pointer');
         }
     }
 
